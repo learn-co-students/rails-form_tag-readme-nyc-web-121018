@@ -112,3 +112,189 @@ Processing by PostsController#new as HTML
   Parameters: {"post"=>{"action"=>"create", "authenticity_token"=>"wM0kUAuTuVVs64yO9C+2FgVExLWEkXYBL4fHjMvdHb/wXQBnEIZ1bXK7fKn5neP40gN03qULwt9kcGv5dkFKWg==", "commit"=>"Submit Post", "controller"=>"posts", "description"=>"asdf", "title"=>"Rails Introduction Quiz", "utf8"=>"✓"}}
   Rendered posts/new.html.erb within layouts/application (0.3ms)
 Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:12:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.3ms)
+Completed 200 OK in 387ms (Views: 378.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/" for ::1 at 2019-01-11 11:12:55 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:15:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.3ms)
+Completed 200 OK in 229ms (Views: 220.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:16:14 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:16:43 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:16:47 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:17:25 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:17:28 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:25:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.4ms)
+Completed 200 OK in 226ms (Views: 216.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-01-11 11:25:22 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"derp derp", "description"=>"derp herp derp"}, "authenticity_token"=>"qAMa3S8G8KsCUJrDF4cyIFVl2lXaiFWW9JPJP/bxGg0yafLI0nwRucnk4Uh+tJSSKvk8Oda6IS8hctOzLenS0A=="}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "derp derp"], ["description", "derp herp derp"], ["created_at", "2019-01-11 16:25:22.524647"], ["updated_at", "2019-01-11 16:25:22.524647"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.2ms)
+
+NameError (undefined local variable or method `post_path' for #<PostsController:0x007fe5088f3c80>
+Did you mean?  posts_path):
+  app/controllers/posts_controller.rb:11:in `create'
+
+
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.4ms)
+
+
+Started POST "/posts" for ::1 at 2019-01-11 11:26:18 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"derp derp", "description"=>"derp herp derp"}, "authenticity_token"=>"qAMa3S8G8KsCUJrDF4cyIFVl2lXaiFWW9JPJP/bxGg0yafLI0nwRucnk4Uh+tJSSKvk8Oda6IS8hctOzLenS0A=="}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "derp derp"], ["description", "derp herp derp"], ["created_at", "2019-01-11 16:26:18.466685"], ["updated_at", "2019-01-11 16:26:18.466685"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.1ms)
+
+NameError (undefined local variable or method `post_path' for #<PostsController:0x007fe5016967f0>
+Did you mean?  posts_path):
+  app/controllers/posts_controller.rb:11:in `create'
+
+
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.5ms)
+
+
+Started GET "/posts" for ::1 at 2019-01-11 11:26:21 -0500
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:26:27 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (25.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `post_path' for #<#<Class:0x007fe502bbf078>:0x007fe507a57b40>
+Did you mean?  posts_path
+               font_path):
+    1: <h3>Post Form</h3>
+    2: 
+    3: <form action="<%= post_path %>" method="POST">
+    4:   <label>Post title:</label><br>
+    5:   <input type="text" id="post_title" name="post[title]"><br>
+    6: 
+  app/views/posts/new.erb:3:in `_app_views_posts_new_erb__650742966223045949_70310826259520'
+
+
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:26:38 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-01-11 11:26:42 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"asdasd", "description"=>"asdasd"}, "authenticity_token"=>"QOv0/1JZgniZ57FzBWOXi5TdMJKzHszIu1d5GCTzh43agRzqryNjalJTyvhsUDE560HW/r8suHFutmOU/+tPUA=="}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "asdasd"], ["description", "asdasd"], ["created_at", "2019-01-11 16:26:42.826962"], ["updated_at", "2019-01-11 16:26:42.826962"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `post_path' for #<PostsController:0x007fe507869cc0>
+Did you mean?  posts_path):
+  app/controllers/posts_controller.rb:11:in `create'
+
+
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/evanpavley/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.7ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:26:55 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-01-11 11:27:06 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"post"=>{"title"=>"asdasd derpsd p", "description"=>"daspdpofasfdklsdfjlklkfsaljkflkjasflkjasflajsf"}, "authenticity_token"=>"ZCXVXZXjdBfClxV/cIVAUuJd0gXEk77jkwJ+nPyGJoT+Tz1IaJmVBQkjbvQZtubgncE0acihylpG42QQJ57uWQ=="}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "asdasd derpsd p"], ["description", "daspdpofasfdklsdfjlklkfsaljkflkjasflkjasflajsf"], ["created_at", "2019-01-11 16:27:06.347873"], ["updated_at", "2019-01-11 16:27:06.347873"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for ::1 at 2019-01-11 11:27:06 -0500
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:31:22 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-01-11 11:33:57 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.3ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
